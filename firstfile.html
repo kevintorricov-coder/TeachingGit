@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taller Práctico: Git & GitHub</title>
+    <style>
+      :root {
+        --bg: #0d1117;
+        --card-bg: #161b22;
+        --border: #30363d;
+        --text: #c9d1d9;
+        --accent: #58a6ff;
+        --green: #2ea043;
+        --code-bg: #21262d;
+      }
+
+      body {
+        font-family:
+          -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+          Arial, sans-serif;
+        background-color: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        max-width: 720px;
+        width: 100%;
+      }
+
+      header {
+        text-align: center;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 1.5rem;
+      }
+
+      h1 {
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+      }
+
+      .badge {
+        background: var(--code-bg);
+        border: 1px solid var(--border);
+        padding: 0.2rem 0.6rem;
+        border-radius: 20px;
+        font-size: 0.85rem;
+        color: var(--accent);
+      }
+
+      .card {
+        background-color: var(--card-bg);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      h2 {
+        color: #ffffff;
+        font-size: 1.25rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+      }
+
+      ul.commands {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+
+      ul.commands li {
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+      }
+
+      code {
+        font-family:
+          ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+        background: var(--code-bg);
+        color: #79c0ff;
+        padding: 0.3rem 0.6rem;
+        border-radius: 6px;
+        border: 1px solid var(--border);
+        display: inline-block;
+        width: fit-content;
+        font-size: 0.95rem;
+      }
+
+      .desc {
+        font-size: 0.9rem;
+        color: #8b949e;
+        margin-left: 0.2rem;
+      }
+
+      /* Sección práctica para los alumnos */
+      .activity {
+        border-left: 4px solid var(--green);
+      }
+
+      .student-list {
+        list-style-type: square;
+        padding-left: 1.2rem;
+        margin-top: 0.8rem;
+      }
+
+      .student-list li {
+        color: #e6edf3;
+        padding: 0.2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>🚀 Práctica de Git & GitHub</h1>
+        <span class="badge">Flujo Básico de Trabajo</span>
+      </header>
+
+      <!-- Comandos principales -->
+      <section class="card">
+        <h2>Comandos Esenciales</h2>
+        <ul class="commands">
+          <li>
+            <code>git clone &lt;url-del-repositorio&gt;</code>
+            <span class="desc"
+              >Descarga una copia local del repositorio remoto.</span
+            >
+          </li>
+          <li>
+            <code>git status</code>
+            <span class="desc"
+              >Muestra el estado actual del árbol de trabajo (archivos
+              modificados o nuevos).</span
+            >
+          </li>
+          <li>
+            <code>git add index.html</code>
+            <span class="desc"
+              >Prepara los cambios en el archivo para el commit (Staging
+              Area).</span
+            >
+          </li>
+          <li>
+            <code>git commit -m "feat: mi primera contribución"</code>
+            <span class="desc"
+              >Guarda la instantánea de los cambios con un mensaje
+              descriptivo.</span
+            >
+          </li>
+          <li>
+            <code>git push origin main</code>
+            <span class="desc"
+              >Sube los commits locales al repositorio en GitHub.</span
+            >
+          </li>
+        </ul>
+      </section>
+
+      <!-- Dinámica práctica -->
+      <section class="card activity">
+        <h2>✍️ Actividad en Clase</h2>
+        <p>
+          Edita este archivo, agrega tu nombre a la lista y realiza el ciclo
+          completo: <strong>add ➔ commit ➔ push</strong>.
+        </p>
+
+    <!-- Dinámica práctica -->
+    <section class="card activity">
+      <h2>✍️ Actividad en Clase</h2>
+      <p>Edita este archivo, agrega tu nombre a la lista con 3 commits y realiza el ciclo completo: <strong>add ➔ commit ➔ push</strong>.</p>
+      
+      <ul class="student-list">
+        <li>Daniel Claure Rios 👻</li>
+        <li>Kevin Alexander Torrico — 25 años — Semestre: POR COMPLETAR</li>
+        <!-- Los alumnos agregan su línea aquí abajo -->
+      </ul>
+      </section>
+    </div>
+  </body>
+</html>
